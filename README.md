@@ -76,53 +76,40 @@ Let's talk more weatherproofing. The system has some built in weatherproofing of
 
 ## 8.  Backflow Preventer
 
+Backflow preventers do exactly that - they prevent water from flowing backwards and back into the main water supply, thus preventing potential contamination.
+
 ## 9.  Water Pressure Regulator
 
-## 10. Water Filter
+In drip irrigation systems, water pressure regulators are essential for reducing water pressure to a level that the system can handle. Utilizing the correct water pressure for a drip system is important to assure that accurate volumes of water are applied and for the long-term longevity of the system. For most vegetable gardens and some other low-flow systems, a water pressure regulator that reduces water pressure to 25 PSI is adequate. 
+
+## 10. Water Filter. 
+
+
 
 ## 11. PVC Components
 
+
+
 ## 12. Valves
+
+
 
 ## 13. Mainline
 
+
+
 ## 14. Connectors
+
+
 
 ## 15. Dripline
 
+
+
 ## 16. Plugs and Caps
 
+
+
 ## 17. Other irrigation components 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
