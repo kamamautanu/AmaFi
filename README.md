@@ -96,7 +96,7 @@ Backflow preventers do exactly that - they prevent water from flowing backwards 
 
 ## 9.  Water Pressure Regulator
 
-In drip irrigation systems, water pressure regulators are essential for reducing water pressure to a level that the system can handle. Utilizing the correct water pressure for a drip system is important to assure that accurate volumes of water are applied and for the long-term longevity of the system. For most vegetable gardens and some other low-flow systems, a water pressure regulator that reduces water pressure to 25 PSI is adequate. 
+In drip irrigation systems, water pressure regulators are essential for reducing water pressure to a level that the system can handle. Utilizing the correct water pressure for a drip system is important to assure that accurate volumes of water are applied and for the long-term longevity of the system. For most vegetable gardens and some other low-flow systems, a water pressure regulator that reduces water pressure to 25 PSI is adequate. I went with this [25 PSI Senninger 3/4" Hose Thread Pressure Regulator](https://www.dripdepot.com/item/senninger-three-quarter-inch-hose-thread-pressure-regulator-psi-25-psi)
 
 ## 10. Water Filter 
 
