@@ -46,7 +46,7 @@ License
 
 # What is AmaFi?
 
-I was inspired to create AmaFi to reduce the amount of time I spent hand watering my garden and to also reduce the amount of water that I used in my garden.
+I was inspired to create AmaFi to reduce the amount of time and water required by my garden.
 
 # What is next for AmaFi?
 
