@@ -92,7 +92,7 @@ Let's talk more weatherproofing. The system has some built in weatherproofing of
 
 ## 8.  Backflow Preventer
 
-Backflow preventers do exactly that - they prevent water from flowing backwards and back into the main water supply, thus preventing potential contamination.
+Backflow preventers do exactly that - they prevent water from flowing backwards and back into the main water supply, thus preventing potential contamination. There are metal and plastic backflow preventers depending on a system's unique requirements. Here, I decided to go for a [brass backflow preventer](https://www.dripdepot.com/product/aqualine-brass-three-quarter-inch-hose-end-vacuum-breaker) since I connected mine directly to the main valve.
 
 ## 9.  Water Pressure Regulator
 
