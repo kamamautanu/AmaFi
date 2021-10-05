@@ -127,7 +127,8 @@ The mainline is also known as the supply line because it feeds water from upstre
 
 ## 14. Connectors
 
-
+[](https://www.dripdepot.com/item/irritec-perma-loc-tubing-by-fpt-tee-adapter-perma-loc-size-half-inch-thread-size-half-inch-fpt)
+[](https://www.dripdepot.com/item/barb-tubing-coupling-size-quarter-inch)
 
 ## 15. Dripline
 
@@ -137,7 +138,8 @@ Similar to mainline, dripline can be made from a number of materials in a range 
 
 ## 16. Plugs and Caps
 
-
+[](https://www.dripdepot.com/item/irritec-perma-loc-tubing-end-cap-perma-loc-size-half-inch)
+[](https://www.dripdepot.com/item/goof-plug-size-quarter-inch)
 
 ## 17. Other irrigation components 
 
