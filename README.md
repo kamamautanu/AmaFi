@@ -75,11 +75,13 @@ Soil moisture sensors use either resistive or capacitive sensing. Resistive sens
 
 ## 4.  I2C Multiplexer
 
-The Inter-Integrated Circuit (I2C) Interface on the Raspberry Pi allows multiple I2C devices to be connected to one I2C Bus as long as each device has a unique I2C address, multiple instances of the same address are not allowed. An I2C Multiplexer allows multiple I2C sensors with the same I2C address to be connected to different channels on the multiplexer, thus allowing multiple sensors with the same I2C address to connect to one I2C Bus. One multiplexer was plenty for the 6 soil moisture sensors I needed to connect, but multiple Multiplexers could be implemented.  
+The Inter-Integrated Circuit (I2C) Interface on the Raspberry Pi allows multiple I2C devices to be connected to one I2C Bus as long as each device has a unique I2C address, multiple instances of the same address are not allowed. An I2C Multiplexer allows multiple I2C sensors with the same I2C address to be connected to different channels on the multiplexer, thus allowing multiple sensors with the same I2C address to connect to one I2C Bus. One multiplexer was plenty for the 6 soil moisture sensors I needed to connect, but multiple Multiplexers could be implemented. [TCA9548A I2C Multiplexer](https://www.adafruit.com/product/2717?gclid=CjwKCAjw7--KBhAMEiwAxfpkWJfjOfjJrfvSvOHVA4LUwrq7fYuRUEg9kGJ12MZfuS3dDWTGXzFlyBoCTxQQAvD_BwE)
 
 ## 5.  Relay
 
 In order to create three irrigation zones that operated and could be water idependently of one another, I had to utilize three relays. These relays run on digital GPIO pins that can be pulled high on the Raspberry Pi
+
+[Adafruit STEMMA Non-Latching Mini Relay](https://www.adafruit.com/product/4409)
 
 ## 6.  Solenoid Valve
 
