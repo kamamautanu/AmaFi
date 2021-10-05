@@ -56,7 +56,11 @@ Four words - going solar and wireless. That's right, now that I have a functioni
 
 ## 1.  Microprocessor 
 
+For this project I chose the common microprocessor Raspberry Pi
+
 ## 2.  Case
+
+Since the electronic components of this system are housed outdoors, thorough weatherproofing was especially imperative to the longevity of the device. With this in consideration, I decided to design a 3D enclosure in OpenSCAD and then used Cura to convert the model into 3D printable g-code. The enclosure has slots on the back for zip ties for easy securing, two pegs inside spaced to hold two half-sized Adafruit Permaboards, and a removable bottom with six 1/2 inch circle cutouts for wires and a small spot to use a screwdriver to pop the bottom out. For more information, the complete details can be found HERE. Since PLA is not UV resistant, I simply used some sand paper to abrade the exterior of the case and applied a coating of UV resistant ??? on the outside. 
 
 ## 3.  Soil Moisture Sensor
 
@@ -67,6 +71,8 @@ Four words - going solar and wireless. That's right, now that I have a functioni
 ## 6.  I2C Multiplexer
 
 ## 7.  Other electical components
+
+Let's talk more weatherproofing. The system has some built in weatherproofing of electical components with the 3D enclosure 
 
 ## 8.  Backflow Preventer
 
