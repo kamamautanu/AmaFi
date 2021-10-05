@@ -58,12 +58,31 @@ Four words - going solar and wireless. That's right, now that I have a functioni
 
 For this project I chose the common microprocessor Raspberry Pi Zero W. It's compact, inexpensive, and has more than enough capacity and power for the tasks we'll be performing. According to ?, the ? microSD card has the best long-term performance with RasPi Zero W, so I purchased a 32 GB one and formatted it with the latest version of Rasperry Pi OS at the time of this writing (Buster). The microUSB port on the RasPi Zero W is used to power the system through a DC adapter plugged into a power outlet. Some of the other RasPi Zero W features utilized in this project are built in WiFi configured using headless setup, the I2C Interface, both the 3.3V and 5V power rails, digital pins that can be pulled high, among others. Once I had my RasPi booted, I did a simple nmap network scan to determine what IP address the RaspPi was using on my local network:
 
-nmap -sn YOURROUTERIP/24
+`nmap -sn YOURROUTERIP/24`
 
 With this information you simply ssh into the RasPi using these default credentials user:pi and password:raspberry and immediately change your password to something secure. If you haven't already, you'll have to update and install all the dependencies for CircuitPython, Seesaw, and other Python modules. For an in depth guide to configuring CircuitPython on your RasPi, you can view the Adafruit documentation. Otherwise, here's the code I ran to configure my setup:
 
-INSERT CODE
+`sudo apt-get update`
 
+`sudo apt-get upgrade`
+
+`sudo apt-get install python3-pip`
+
+`sudo pip3 install --upgrade setuptools`
+
+`cd ~`
+
+`sudo pip3 install --upgrade adafruit-python-shell`
+
+`wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/raspi-blinka.py`
+
+`sudo python3 raspi-blinka.py`
+
+`sudo pip3 install adafruit-circuitpython-seesaw`
+
+`sudo pip3 install time`
+
+`sudo pip3 install `
 
 ## 2.  Case
 
