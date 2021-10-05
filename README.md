@@ -10,6 +10,10 @@ The effeciency of drip irrigation systems has been known for some time. In some 
 
 
 # Table of Contents
+AmaFi Waterwise Irrigation System
+  What is AmaFi?
+
+  What is next for AmaFi?
 
 Components Details
   1.  Microprocessor 
@@ -33,6 +37,51 @@ Components Details
 Bill of Materials (BOM)
 Firmware
 Schematic
-
-
+User Manual
+FAQ
+Tech Details
+Bugs
 License
+
+# What is AmaFi?
+
+I was inspired to create AmaFi to reduce the amount of time I spent hand watering my garden. My simple idea quickly involved from an automated drip irrigation system to the integration of a plant monitoring system, so I only water when I need to.
+
+# What is next for AmaFi?
+
+Four words - going solar and wireless. That's right, now that I have a functioning system up and running I can focus on making improvements to my system. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
