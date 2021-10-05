@@ -100,7 +100,7 @@ In drip irrigation systems, water pressure regulators are essential for reducing
 
 ## 10. Water Filter 
 
-The water filter in an irrigation system such as the one I've created acts as a safe guard against damage that the driplines could incur if 
+The water filter in an irrigation system such as this acts as a safe guard against damage that the driplines could incur in a worst case scenario where particulate matter contaminated the main water supply. Since the dripline used in this systen have built in emitters, a 150 micron mesh filter will do the job. 
 
 ## 11. PVC Components
 
