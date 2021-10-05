@@ -56,7 +56,7 @@ Four words - going solar and wireless. That's right, now that I have a functioni
 
 ## 1.  Microprocessor 
 
-For this project I chose the common microprocessor Raspberry Pi
+For this project I chose the common microprocessor Raspberry Pi Zero W. It's compact, inexpensive, and has more than enough capacity and power for the tasks we'll be performing. Some of the RasPi Zero W features utilized in this project are: built in WiFi configured using headless setup, the I2C Interface, both the 3.3V and 5V power rails, digital pins that can be pulled high, among others. According to ?, the ? microSD card has the best long-term performance with RasPi Zero W, so I purchased a 32 GB one and formatted it with the latest version of Rasperry Pi OS at the time of this writing (Buster). The microUSB port on the RasPi Zero W is used to power the system through a DC adapter plugged into a power outlet. 
 
 ## 2.  Case
 
@@ -71,6 +71,8 @@ Soil moisture sensors use either resistive or capacitive sensing. Resistive sens
 The Inter-Integrated Circuit (I2C) Interface on the Raspberry Pi allows multiple I2C devices to be connected to one I2C Bus as long as each device has a unique I2C address, multiple instances of the same address are not allowed. An I2C Multiplexer allows multiple I2C sensors with the same I2C address to be connected to different channels on the multiplexer, thus allowing multiple sensors with the same I2C address to connect to one I2C Bus. One multiplexer was plenty for the 6 soil moisture sensors I needed to connect, but multiple Multiplexers could be implemented.  
 
 ## 5.  Relay
+
+In order to create three irrigation zones that operated and could be water idependently of one another, I had to utilize three relays. These relays run on digital GPIO pins that can be pulled high on the Raspberry Pi
 
 ## 6.  Solenoid Valve
 
@@ -95,6 +97,7 @@ In drip irrigation systems, water pressure regulators are essential for reducing
 
 ## 11. PVC Components
 
+There are a number of ways to connect the main valve to the drip irrigation system. I wanted my system to be as sturdy and look as sleek as possible, so I decided to run PVC pipe to as close to my solenoids as I could. This involved digging an 18" deep, 8' long trench through hard clay soil from my main valve to my garden bed. I could have used a roter tiller to do the hard labor for me, but I also wasn't sure where other pipes may have been located, so I took the more cautious and laborous route. I happened to have more than enough 3/4" PVC pipe laying around from a previous irrigation project and fortuitously enou
 
 
 ## 12. Valves
@@ -103,10 +106,7 @@ In drip irrigation systems, water pressure regulators are essential for reducing
 
 ## 13. Mainline
 
-The mainline is also known as the supply line because it feeds water from upstream to the driplines that are connected downstream. For this reason it is a pillar in any drip irrigation system. Mainline can be made out of a number of materials, but I chose to go with polyethylene tubing because it is sturdy and cheap. Mainline also comes in a number of sizes from as small as 1/8" in diameter to over 1". The solenoid valves that I am using in my system are are 1/2" in diameter, so I went with a 1/2" diameter for my mainline as well. Before buying the mainline, I made sure that that my system did not exceed the maximum run length or maximum gallons per hour supplied for the 1/2" polyethylene mainline tubing I intended to use - in this case 200' and 200 GPH, respectively. With around 25' of mainline . Typically you would first determine your run length and the GPH supplied, but with the limiting factor in this scenario being the diameter of my solenoid valves
-
-
-
+The mainline is also known as the supply line because it feeds water from upstream to the driplines that are connected downstream making it a pillar in any drip irrigation system. Mainline can be made out of a number of materials, but I chose to go with polyethylene tubing because it is sturdy and cheap. Mainline also comes in a number of sizes from as small as 1/8" in diameter to over 1". The solenoid valves that I am using in my system are 1/2", so I went with a 1/2" diameter for my mainline as well. Before buying the mainline, I made sure that my system did not exceed the maximum run length or maximum gallons per hour supplied for the 1/2" polyethylene mainline tubing I intended to use - in this case 200' and 200 GPH, respectively. With around 25' of mainline, I can . Typically you would first calculate your run length and the GPH supplied to determine the size mainline your system required, but with the limiting factor in this scenario being the diameter of my solenoid valves
 
 ## 14. Connectors
 
@@ -114,7 +114,7 @@ The mainline is also known as the supply line because it feeds water from upstre
 
 ## 15. Dripline
 
-
+Similar to mainline, dripline can be made from a number of materials in a range of sizes. 
 
 ## 16. Plugs and Caps
 
@@ -122,4 +122,4 @@ The mainline is also known as the supply line because it feeds water from upstre
 
 ## 17. Other irrigation components 
 
-
+Additional materials that are required to build this drip irrigation system include: PVC primer and cement, plumber's tape, painter's tape
