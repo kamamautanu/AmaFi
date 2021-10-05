@@ -64,14 +64,21 @@ Since the electronic components of this system are housed outdoors, thorough wea
 
 ## 3.  Soil Moisture Sensor
 
+To date there are a number of soil moisture sensors available on the market, these use either resistive or capacitive sensing. Resistive sensors impute the volumentric content of water by measuring the current that passes through the soil between the two sensor prongs to get a resistance value. By design resistive sensors corrode quickly as current runs through the exposed soil probes causing electrolysis. On the other hand, capacitive sensing measures the dielectic formed by the soil and is actually a more accurate measure of soil moisture content compared to resistive sensing. Something like applying fertilizer would decrease the resistance sensor reading, but the most important factor influencing dielectic measurements taken by capacitance sensors is water. Capacitive sensors themselves are made out of a more corrossion resistive material, meaning they last longer than metal resistive sensors.  
+
 ## 4.  Relay
 
 ## 5.  Solenoid Valve
 
+Drip irrigation systems are low-pressure and I knew that in my case I would be installing a water pressure regulator upstream of all of my solenoid valves, so I was not concerned about using plastic solenoid valves. There are metal solenoid valves that could be substituted in areas that require more hardiness. These
+
 ## 6.  I2C Multiplexer
+
+The Inter-Integrated Circuit (I2C) 
 
 ## 7.  Other electical components
 
+Multimeter, eletrical tape, lots and lots of wires,
 Let's talk more weatherproofing. The system has some built in weatherproofing of electical components with the 3D enclosure 
 
 ## 8.  Backflow Preventer
