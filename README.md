@@ -108,6 +108,12 @@ The water filter in an irrigation system such as this acts as a safe guard again
 
 There are a number of ways to connect the main valve to the drip irrigation system. I wanted my system to be as sturdy and look as sleek as possible, so I decided to run PVC pipe to as close to my solenoids as I could. This involved digging an 18" deep, 8' long trench through hard clay soil from my main valve to my garden bed. I could have used a roter tiller to do the hard labor for me, but I also wasn't sure where other pipes may have been located, so I took the more cautious and laborous route. I happened to have more than enough 3/4" PVC pipe laying around from a previous irrigation project and fortuitously enou
 
+[](https://www.dripdepot.com/item/hydro-rain-pvc-lock-combination-tee-size-three-quarter-inch-pvcl-x-half-inch-fpt)
+[](https://www.dripdepot.com/item/hydro-rain-pvc-lock-elbow-size-three-quarter-inch)
+[](https://www.dripdepot.com/item/hydro-rain-pvc-lock-combination-elbow-size-three-quarter-inch-pvcl-x-half-inch-fpt)
+[](https://www.dripdepot.com/item/hydro-rain-pvc-lock-coupler-size-three-quarter-inch)
+[](https://www.dripdepot.com/item/schedule-40-pvc-adapter-fpt-by-slip-slip-size-three-quarter-inch-fpt-size-three-quarter-inch)
+[](https://www.dripdepot.com/item/schedule-40-pvc-45-degree-slip-elbow-size-three-quarter-inch)
 
 ## 12. Valves
 
@@ -117,6 +123,8 @@ There are a number of ways to connect the main valve to the drip irrigation syst
 
 The mainline is also known as the supply line because it feeds water from upstream to the driplines that are connected downstream making it a pillar in any drip irrigation system. Mainline can be made out of a number of materials, but I chose to go with polyethylene tubing because it is sturdy and cheap. Mainline also comes in a number of sizes from as small as 1/8" in diameter to over 1". The solenoid valves that I am using in my system are 1/2", so I went with a 1/2" diameter for my mainline as well. Before buying the mainline, I made sure that my system did not exceed the maximum run length or maximum gallons per hour supplied for the 1/2" polyethylene mainline tubing I intended to use - in this case 200' and 200 GPH, respectively. With around 25' of mainline, I can . Typically you would first calculate your run length and the GPH supplied to determine the size mainline your system required, but with the limiting factor in this scenario being the diameter of my solenoid valves
 
+[1/2" Polyethylene Mainline](https://www.dripdepot.com/item/polyethylene-tubing-size-half-inch-600-inch-inside-diameter-by-700-inch-od-length-50-feet)
+
 ## 14. Connectors
 
 
@@ -124,6 +132,8 @@ The mainline is also known as the supply line because it feeds water from upstre
 ## 15. Dripline
 
 Similar to mainline, dripline can be made from a number of materials in a range of sizes. 
+
+[1/4" Polyethylene Dripline](https://www.dripdepot.com/item/quarter-inch-polyethylene-dripline-emitter-spacing-6-inch-flow-rate-half-gph-roll-length-50-feet-color-black)
 
 ## 16. Plugs and Caps
 
