@@ -100,7 +100,7 @@ In drip irrigation systems, water pressure regulators are essential for reducing
 
 ## 10. Water Filter 
 
-
+The water filter in an irrigation system such as the one I've created acts as a safe guard against damage that the driplines could incur if 
 
 ## 11. PVC Components
 
@@ -130,3 +130,20 @@ Similar to mainline, dripline can be made from a number of materials in a range 
 ## 17. Other irrigation components 
 
 Additional materials that are required to build this drip irrigation system include: PVC primer and cement, plumber's tape, painter's tape
+
+# User Manual 
+
+
+
+# FAQs
+
+# Known Bugs
+
+* Sometimes the Seesaw package in Python uses the default I2C address rather than the specified 0x3
+
+# License 
+
+The AmaFi device is licensed under Open-source hardware, licensed by ???:
+* Hardware is licensed under ?
+* Software is licensed under ?
+* Documentation is licensed under ?
