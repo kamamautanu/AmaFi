@@ -64,17 +64,17 @@ Since the electronic components of this system are housed outdoors, thorough wea
 
 ## 3.  Soil Moisture Sensor
 
-To date there are a number of soil moisture sensors available on the market, these use either resistive or capacitive sensing. Resistive sensors impute the volumentric content of water by measuring the current that passes through the soil between the two sensor prongs to get a resistance value. By design resistive sensors corrode quickly as current runs through the exposed soil probes causing electrolysis. On the other hand, capacitive sensing measures the dielectic formed by the soil and is actually a more accurate measure of soil moisture content compared to resistive sensing. Something like applying fertilizer would decrease the resistance sensor reading, but the most important factor influencing dielectic measurements taken by capacitance sensors is water. Capacitive sensors themselves are made out of a more corrossion resistive material, meaning they last longer than metal resistive sensors.  
+Soil moisture sensors use either resistive or capacitive sensing. Resistive sensors impute the volumentric content of water by measuring the current that passes through the soil between the two sensor prongs to get a resistance value. By design resistive sensors corrode quickly as current runs through the exposed soil probes causing electrolysis. On the other hand, capacitive sensing measures the dielectic formed by the soil and is actually a more accurate measure of soil moisture content compared to resistive sensing. Something like applying fertilizer would decrease the resistance sensor reading, but the most important factor influencing dielectic measurements taken by capacitance sensors is water. Capacitive sensors themselves are made out of a more corrossion resistive material, meaning they last longer than metal resistive sensors. I chose to go with the Adafruit Capacitive Soil Moisture Sensor. It runs on the I2C Bus, uses the MIT license, and comes with the added bonus of a temperature sensor that is accurate to +/- 2 degrees Celcius.     
 
-## 4.  Relay
+## 4.  I2C Multiplexer
 
-## 5.  Solenoid Valve
+The Inter-Integrated Circuit (I2C) Interface on the Raspberry Pi allows multiple I2C devices to be connected to one I2C Bus as long as each device has a unique I2C address, multiple instances of the same address are not allowed. An I2C Multiplexer allows multiple I2C sensors with the same I2C address to be connected to different channels on the multiplexer, thus allowing multiple sensors with the same I2C address to connect to one I2C Bus. One multiplexer was plenty for the 6 soil moisture sensors I needed to connect, but multiple Multiplexers could be implemented.  
 
-Drip irrigation systems are low-pressure and I knew that in my case I would be installing a water pressure regulator upstream of all of my solenoid valves, so I was not concerned about using plastic solenoid valves. There are metal solenoid valves that could be substituted in areas that require more hardiness. These
+## 5.  Relay
 
-## 6.  I2C Multiplexer
+## 6.  Solenoid Valve
 
-The Inter-Integrated Circuit (I2C) 
+Drip irrigation systems are low-pressure and I knew that in my case I would be installing a water pressure regulator upstream of all of my solenoid valves, so I was not concerned about using plastic solenoid valves. Metal solenoid valves that could be substituted in areas that require more hardiness. These solenoids run on 12V
 
 ## 7.  Other electical components
 
@@ -89,7 +89,7 @@ Backflow preventers do exactly that - they prevent water from flowing backwards 
 
 In drip irrigation systems, water pressure regulators are essential for reducing water pressure to a level that the system can handle. Utilizing the correct water pressure for a drip system is important to assure that accurate volumes of water are applied and for the long-term longevity of the system. For most vegetable gardens and some other low-flow systems, a water pressure regulator that reduces water pressure to 25 PSI is adequate. 
 
-## 10. Water Filter. 
+## 10. Water Filter 
 
 
 
@@ -102,6 +102,9 @@ In drip irrigation systems, water pressure regulators are essential for reducing
 
 
 ## 13. Mainline
+
+The mainline is also known as the supply line because it feeds water from upstream to the driplines that are connected downstream. For this reason it is a pillar in any drip irrigation system. Mainline can be made out of a number of materials, but I chose to go with polyethylene tubing because it is sturdy and cheap. Mainline also comes in a number of sizes from as small as 1/8" in diameter to over 1". The solenoid valves that I am using in my system are are 1/2" in diameter, so I went with a 1/2" diameter for my mainline as well. Before buying the mainline, I made sure that that my system did not exceed the maximum run length or maximum gallons per hour supplied for the 1/2" polyethylene mainline tubing I intended to use - in this case 200' and 200 GPH, respectively. With around 25' of mainline . Typically you would first determine your run length and the GPH supplied, but with the limiting factor in this scenario being the diameter of my solenoid valves
+
 
 
 
