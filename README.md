@@ -11,6 +11,7 @@ The effeciency of drip irrigation systems has been known for some time. In some 
 
 # Table of Contents
 AmaFi Waterwise Irrigation System
+  
   What is AmaFi?
 
   What is next for AmaFi?
@@ -45,7 +46,7 @@ License
 
 # What is AmaFi?
 
-I was inspired to create AmaFi to reduce the amount of time I spent hand watering my garden. My simple idea quickly involved from an automated drip irrigation system to the integration of a plant monitoring system, so I only water when I need to.
+I was inspired to create AmaFi to reduce the amount of time I spent hand watering my garden and to also reduce the amount of water that I used in my garden.
 
 # What is next for AmaFi?
 
