@@ -52,6 +52,9 @@ I was inspired to create AmaFi to reduce the amount of time and water required b
 
 Four words - going solar and wireless. That's right, now that I have a functioning system up and running I can focus on making improvements to my system. 
 
+# Component Details
+
+## 1.  Microprocessor 
 
 
 
