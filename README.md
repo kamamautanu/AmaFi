@@ -56,6 +56,37 @@ Four words - going solar and wireless. That's right, now that I have a functioni
 
 ## 1.  Microprocessor 
 
+## 2.  Case
+
+## 3.  Soil Moisture Sensor
+
+## 4.  Relay
+
+## 5.  Solenoid Valve
+
+## 6.  I2C Multiplexer
+
+## 7.  Other electical components
+
+## 8.  Backflow Preventer
+
+## 9.  Water Pressure Regulator
+
+## 10. Water Filter
+
+## 11. PVC Components
+
+## 12. Valves
+
+## 13. Mainline
+
+## 14. Connectors
+
+## 15. Dripline
+
+## 16. Plugs and Caps
+
+## 17. Other irrigation components 
 
 
 
