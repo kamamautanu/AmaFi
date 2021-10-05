@@ -112,8 +112,8 @@ There are a number of ways to connect the main valve to the drip irrigation syst
 [](https://www.dripdepot.com/item/hydro-rain-pvc-lock-elbow-size-three-quarter-inch)
 [](https://www.dripdepot.com/item/hydro-rain-pvc-lock-combination-elbow-size-three-quarter-inch-pvcl-x-half-inch-fpt)
 [](https://www.dripdepot.com/item/hydro-rain-pvc-lock-coupler-size-three-quarter-inch)
-[](https://www.dripdepot.com/item/schedule-40-pvc-adapter-fpt-by-slip-slip-size-three-quarter-inch-fpt-size-three-quarter-inch)
-[](https://www.dripdepot.com/item/schedule-40-pvc-45-degree-slip-elbow-size-three-quarter-inch)
+[3/4" Schedule 40 PVC F](https://www.dripdepot.com/item/schedule-40-pvc-adapter-fpt-by-slip-slip-size-three-quarter-inch-fpt-size-three-quarter-inch)
+[3/4" Schedule 40 PVC 45 Degree Elbow Slip](https://www.dripdepot.com/item/schedule-40-pvc-45-degree-slip-elbow-size-three-quarter-inch)
 
 ## 12. Valves
 
