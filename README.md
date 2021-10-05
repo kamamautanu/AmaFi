@@ -108,10 +108,10 @@ The water filter in an irrigation system such as this acts as a safe guard again
 
 There are a number of ways to connect the main valve to the drip irrigation system. I wanted my system to be as sturdy and look as sleek as possible, so I decided to run PVC pipe to as close to my solenoids as I could. This involved digging an 18" deep, 8' long trench through hard clay soil from my main valve to my garden bed. I could have used a roter tiller to do the hard labor for me, but I also wasn't sure where other pipes may have been located, so I took the more cautious and laborous route. I happened to have more than enough 3/4" PVC pipe laying around from a previous irrigation project and fortuitously enou
 
-[](https://www.dripdepot.com/item/hydro-rain-pvc-lock-combination-tee-size-three-quarter-inch-pvcl-x-half-inch-fpt)
-[](https://www.dripdepot.com/item/hydro-rain-pvc-lock-elbow-size-three-quarter-inch)
-[](https://www.dripdepot.com/item/hydro-rain-pvc-lock-combination-elbow-size-three-quarter-inch-pvcl-x-half-inch-fpt)
-[](https://www.dripdepot.com/item/hydro-rain-pvc-lock-coupler-size-three-quarter-inch)
+[3/4" Hydro-rain Tee PVC Lock with 1/2" Female Outlet](https://www.dripdepot.com/item/hydro-rain-pvc-lock-combination-tee-size-three-quarter-inch-pvcl-x-half-inch-fpt)
+[3/4" Hydro-rain PVC Lock Elbow](https://www.dripdepot.com/item/hydro-rain-pvc-lock-elbow-size-three-quarter-inch)
+[3/4" Hydro-rain PVC Lock Elbow to 1/2" Female Outlet](https://www.dripdepot.com/item/hydro-rain-pvc-lock-combination-elbow-size-three-quarter-inch-pvcl-x-half-inch-fpt)
+[3/4" Hydro-rain PVC Lock Coupler](https://www.dripdepot.com/item/hydro-rain-pvc-lock-coupler-size-three-quarter-inch)
 [3/4" Schedule 40 PVC F](https://www.dripdepot.com/item/schedule-40-pvc-adapter-fpt-by-slip-slip-size-three-quarter-inch-fpt-size-three-quarter-inch)
 [3/4" Schedule 40 PVC 45 Degree Elbow Slip](https://www.dripdepot.com/item/schedule-40-pvc-45-degree-slip-elbow-size-three-quarter-inch)
 
@@ -127,8 +127,8 @@ The mainline is also known as the supply line because it feeds water from upstre
 
 ## 14. Connectors
 
-[](https://www.dripdepot.com/item/irritec-perma-loc-tubing-by-fpt-tee-adapter-perma-loc-size-half-inch-thread-size-half-inch-fpt)
-[](https://www.dripdepot.com/item/barb-tubing-coupling-size-quarter-inch)
+[1/2" Threaded Perma-loc Tee Adapter](https://www.dripdepot.com/item/irritec-perma-loc-tubing-by-fpt-tee-adapter-perma-loc-size-half-inch-thread-size-half-inch-fpt)
+[1/4" Barbed Tubing Couplers](https://www.dripdepot.com/item/barb-tubing-coupling-size-quarter-inch)
 
 ## 15. Dripline
 
@@ -138,8 +138,8 @@ Similar to mainline, dripline can be made from a number of materials in a range 
 
 ## 16. Plugs and Caps
 
-[](https://www.dripdepot.com/item/irritec-perma-loc-tubing-end-cap-perma-loc-size-half-inch)
-[](https://www.dripdepot.com/item/goof-plug-size-quarter-inch)
+[1/2" Perma-loc Cap](https://www.dripdepot.com/item/irritec-perma-loc-tubing-end-cap-perma-loc-size-half-inch)
+[Goof Plugs](https://www.dripdepot.com/item/goof-plug-size-quarter-inch)
 
 ## 17. Other irrigation components 
 
