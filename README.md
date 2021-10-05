@@ -83,7 +83,7 @@ In order to create three irrigation zones that operated and could be water idepe
 
 ## 6.  Solenoid Valve
 
-Solenoid valves come in a variety of forms and sizes, but generally have two outlets for liquid and two terminals. I decided to go with the Adafruit Plastic Solenoid Valve as an inexpensive solution. It is a unidirectional liquid solenoid valve with two threaded 1/2" outlets and is powered by 12V DC. The solenoid valve is normally closed and opens when 12V DC current are applied to the valve terminals. Since my solenoid valves are installed downstream of the water pressure regulator I do not have concerns regarding their longevity. The gasket arrangement inside this particular solenoid valve requires a minimum pressure of 3 PSI for the solenoid valve to open. With a water pressure regulator of 25 PSI upstream, I'm not concerned about meeting the minimum pressure requirements. If the specifications in your system are different, make sure you meet the minimum presure. If a hardier valve is needed, comparable metal ones to this can be implemented. These solenoid valves also come with a mesh filter built in, which is another bonus safeguard against damage to the drip system.
+Solenoid valves come in a variety of forms and sizes, but generally have two outlets for liquid and two terminals. I decided to go with the [Adafruit Plastic Solenoid Valve](https://www.adafruit.com/product/997?gclid=CjwKCAjw7--KBhAMEiwAxfpkWGRKpMUIVVWlzhXs_OLp8XZ043Juw9BMAwIWtjTDGVPNoWJCnroIphoCh2AQAvD_BwE) as an inexpensive solution. It is a unidirectional liquid solenoid valve with two threaded 1/2" outlets and is powered by 12V DC. The solenoid valve is normally closed and opens when 12V DC current are applied to the valve terminals. Since my solenoid valves are installed downstream of the water pressure regulator I do not have concerns regarding their longevity. The gasket arrangement inside this particular solenoid valve requires a minimum pressure of 3 PSI for the solenoid valve to open. With a water pressure regulator of 25 PSI upstream, I'm not concerned about meeting the minimum pressure requirements. If the specifications in your system are different, make sure you meet the minimum presure. If a hardier valve is needed, comparable metal ones to this can be implemented. These solenoid valves also come with a mesh filter built in, which is another bonus safeguard against damage to the drip system.
 
 ## 7.  Other electical components
 
@@ -147,3 +147,5 @@ The AmaFi device is licensed under Open-source hardware, licensed by ???:
 * Hardware is licensed under ?
 * Software is licensed under ?
 * Documentation is licensed under ?
+
+
