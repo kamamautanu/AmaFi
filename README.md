@@ -38,7 +38,7 @@ Components Details
 Bill of Materials (BOM)
 Firmware
 Schematic
-(User Manual)[https://github.com/kamamautanu/AmaFi/blob/main/README.md#user-manual]
+[User Manual](https://github.com/kamamautanu/AmaFi/blob/main/README.md#user-manual)
 FAQ
 Tech Details
 Bugs
