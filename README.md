@@ -180,9 +180,31 @@ Similar to mainline, dripline can be made from a number of materials in a range 
 
 Additional materials that are required to build this drip irrigation system include: PVC primer and cement, plumber's tape, painter's tape
 
+# Bill of Materials (BOM)
+
+| Syntax      | Item                           | pcs   | Comment                      |
+| --- | ------------------------------ | ----- | ---------------------------- |
+| 1   | Raspberry Pi Zero W            |   1   |                              |
+| 2   | Samsung Pro 32 GB microSD card |   1   |                              |
+| 3   | MicroUSB Power Supply          |   1   |                              |
+| 4   |     |       |                              |
+| 5   | Raspberry Pi Zero W            |   1   |                              |
+| 6   | Samsung Pro 32 GB microSD card |       |                              |
+| 7   | Raspberry Pi Zero W            |   1   |                              |
+| 8   | Samsung Pro 32 GB microSD card |       |                              |
+| 9   | Raspberry Pi Zero W            |   1   |                              |
+| 10  | Samsung Pro 32 GB microSD card |       |                              |
+| 11  | Raspberry Pi Zero W            |   1   |                              |
+| 12  | Samsung Pro 32 GB microSD card |       |                              |
+| 13  | Samsung Pro 32 GB microSD card |       |                              |
+| 14  | Raspberry Pi Zero W            |   1   |                              |
+| 15  | Samsung Pro 32 GB microSD card |       |                              |
+| 16  | Raspberry Pi Zero W            |   1   |                              |
+| 17  | Samsung Pro 32 GB microSD card |       |                              |
+| 18  | Raspberry Pi Zero W            |   1   |                              |
+| 19  | Samsung Pro 32 GB microSD card |       |                              |
+
 # User Manual 
-
-
 
 # FAQs
 
