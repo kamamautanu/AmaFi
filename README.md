@@ -19,8 +19,8 @@ AmaFi Waterwise Irrigation System
 Components Details
   1.  [Microprocessor](https://github.com/kamamautanu/AmaFi/blob/main/README.md#1-microprocessor) 
   2.  [Case](https://github.com/kamamautanu/AmaFi/blob/main/README.md#2-case)
-  3.  [Soil Moisture Sensor]()
-  4.  [Relay]()
+  3.  [Soil Moisture Sensor](https://github.com/kamamautanu/AmaFi/blob/main/README.md#3-soil-moisture-sensor)
+  4.  [Relay](https://github.com/kamamautanu/AmaFi/blob/main/README.md#4-relay)
   5.  [Solenoid Valve]() 
   6.  [I2C Multiplexer]()
   7.  [Other electrical components]()
