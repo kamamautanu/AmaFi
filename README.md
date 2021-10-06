@@ -36,12 +36,19 @@ Components Details
   17. [Other irrigation components](https://github.com/kamamautanu/AmaFi/blob/main/README.md#17-other-irrigation-components)  
   
 Bill of Materials (BOM)
+
 Firmware
+
 Schematic
+
 [User Manual](https://github.com/kamamautanu/AmaFi/blob/main/README.md#user-manual)
+
 FAQ
+
 Tech Details
+
 Bugs
+
 License
 
 # What is AmaFi?
