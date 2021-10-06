@@ -1,10 +1,6 @@
 # AmaFi
 Automated waterwise irrigation system
 
-One day as I was doing my morning round in the garden watering, two thoughts came to mind, well three really:
-
-1. I love my garden, but I spend so muc  
-
 
 The effeciency of drip irrigation systems has been known for some time. In some systems, water usage can be reduced by 20 to 30%. In a world where water rations are no longer 
 
