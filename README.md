@@ -12,9 +12,9 @@ The effeciency of drip irrigation systems has been known for some time. In some 
 # Table of Contents
 AmaFi Waterwise Irrigation System
   
-  What is AmaFi?
+  [What is AmaFi?](https://github.com/kamamautanu/AmaFi/blob/main/README.md#what-is-amafi)
 
-  What is next for AmaFi?
+  [What is next for AmaFi?](https://github.com/kamamautanu/AmaFi/blob/main/README.md#what-is-next-for-amafi)
 
 Components Details
   1.  [Microprocessor](https://github.com/kamamautanu/AmaFi/blob/main/README.md#1-microprocessor) 
