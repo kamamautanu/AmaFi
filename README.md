@@ -193,7 +193,7 @@ Additional materials that are required to build this drip irrigation system incl
 | 7   | Raspberry Pi Zero W            |   1   |                              |
 | 8   | Samsung Pro 32 GB microSD card |       |                              |
 | 9   | Raspberry Pi Zero W            |   1   |                              |
-| 10  | Samsung Pro 32 GB microSD card |       |                              |
+| 10  | 150 Micron Water Filter        |       |                              |
 | 11  | Raspberry Pi Zero W            |   1   |                              |
 | 12  | Samsung Pro 32 GB microSD card |       |                              |
 | 13  | Samsung Pro 32 GB microSD card |       |                              |
