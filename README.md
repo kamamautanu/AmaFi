@@ -2,22 +2,22 @@
 Automated waterwise irrigation system
 
 
-The effeciency of drip irrigation systems has been known for some time. In some systems, water usage can be reduced by 20 to 30%. In a world where water rations are no longer 
+The effeciency of drip irrigation systems has been known for some time. In some systems, water usage can be reduced by 20 to 30%. In a world where water rations are no longer
 
 
 # Table of Contents
 AmaFi Waterwise Irrigation System
-  
+
   [What is AmaFi?](https://github.com/kamamautanu/AmaFi/blob/main/README.md#what-is-amafi)
 
   [What is next for AmaFi?](https://github.com/kamamautanu/AmaFi/blob/main/README.md#what-is-next-for-amafi)
 
 Components Details
-  1.  [Microprocessor](https://github.com/kamamautanu/AmaFi/blob/main/README.md#1-microprocessor) 
+  1.  [Microprocessor](https://github.com/kamamautanu/AmaFi/blob/main/README.md#1-microprocessor)
   2.  [Case](https://github.com/kamamautanu/AmaFi/blob/main/README.md#2-case)
   3.  [Soil Moisture Sensor](https://github.com/kamamautanu/AmaFi/blob/main/README.md#3-soil-moisture-sensor)
   4.  [Relay](https://github.com/kamamautanu/AmaFi/blob/main/README.md#4-relay)
-  5.  [Solenoid Valve](https://github.com/kamamautanu/AmaFi/blob/main/README.md#5-solenoid-valve) 
+  5.  [Solenoid Valve](https://github.com/kamamautanu/AmaFi/blob/main/README.md#5-solenoid-valve)
   6.  [I2C Multiplexer](https://github.com/kamamautanu/AmaFi/blob/main/README.md#6-i2c-multiplexer)
   7.  [Other electrical components](https://github.com/kamamautanu/AmaFi/blob/main/README.md#7-other-electrical-components)
   8.  [Backflow Preventer](https://github.com/kamamautanu/AmaFi/blob/main/README.md#8-backflow-preventer)
@@ -30,7 +30,7 @@ Components Details
   15. [Dripline](https://github.com/kamamautanu/AmaFi/blob/main/README.md#15-dripline)
   16. [Plugs and Caps](https://github.com/kamamautanu/AmaFi/blob/main/README.md#16-plugs-and-caps)
   17. [Other irrigation components](https://github.com/kamamautanu/AmaFi/blob/main/README.md#17-other-irrigation-components)  
-  
+
 [Bill of Materials (BOM)](https://github.com/kamamautanu/AmaFi/blob/main/README.md#bill-of-materials-BOM)
 
 [Firmware](https://github.com/kamamautanu/AmaFi/blob/main/README.md#firmware)
@@ -53,7 +53,7 @@ I was inspired to create AmaFi to reduce the amount of time and water required b
 
 # What is next for AmaFi?
 
-Four words - going solar and wireless. That's right, now that I have a functioning system up and running I can focus on making improvements to my system. 
+Four words - going solar and wireless. That's right, now that I have a functioning system up and running I can focus on making improvements to my system.
 
 # Component Details
 
@@ -89,7 +89,7 @@ With this information you simply ssh into the RasPi using these default credenti
 
 ## 2. Case
 
-Since the electronic components of this system are housed outdoors, thorough weatherproofing was especially imperative to the longevity of the device. With this in consideration, I decided to design a 3D enclosure in OpenSCAD and then used Cura to convert the model into 3D printable g-code. The enclosure has slots on the back for zip ties for easy securing, two pegs inside spaced to hold two [half-sized Adafruit Permaboards](https://www.adafruit.com/product/571?gclid=CjwKCAjw7--KBhAMEiwAxfpkWNDp2fVAYD2DaYGyx_mDr8xRZU1jsX9PKZduE_mgTrSk0uKAj7SYvhoCk74QAvD_BwE), and a removable bottom with six 1/2 inch circle cutouts for wires and a small spot to use a screwdriver to pop the bottom out. For more information, the complete details can be found HERE. Since PLA is not UV resistant, I simply used some sand paper to abrade the exterior of the case and applied a coating of UV resistant ??? on the outside. 
+Since the electronic components of this system are housed outdoors, thorough weatherproofing was especially imperative to the longevity of the device. With this in consideration, I decided to design a 3D enclosure in OpenSCAD and then used Cura to convert the model into 3D printable g-code. The enclosure has slots on the back for zip ties for easy securing, two pegs inside spaced to hold two [half-sized Adafruit Permaboards](https://www.adafruit.com/product/571?gclid=CjwKCAjw7--KBhAMEiwAxfpkWNDp2fVAYD2DaYGyx_mDr8xRZU1jsX9PKZduE_mgTrSk0uKAj7SYvhoCk74QAvD_BwE), and a removable bottom with six 1/2 inch circle cutouts for wires and a small spot to use a screwdriver to pop the bottom out. For more information, the complete details can be found HERE. Since PLA is not UV resistant, I simply used some sand paper to abrade the exterior of the case and applied a coating of UV resistant ??? on the outside.
 
 ## 3. Soil Moisture Sensor
 
@@ -111,10 +111,14 @@ In order to create three irrigation zones that operated and could be water idepe
 
 Solenoid valves come in a variety of forms and sizes, but generally have two outlets for liquid and two terminals. I decided to go with the [Adafruit Plastic Solenoid Valve](https://www.adafruit.com/product/997?gclid=CjwKCAjw7--KBhAMEiwAxfpkWGRKpMUIVVWlzhXs_OLp8XZ043Juw9BMAwIWtjTDGVPNoWJCnroIphoCh2AQAvD_BwE) as an inexpensive solution. It is a unidirectional liquid solenoid valve with two threaded 1/2" outlets and is powered by 12V DC. The solenoid valve is normally closed and opens when 12V DC current are applied to the valve terminals. Since my solenoid valves are installed downstream of the water pressure regulator I do not have concerns regarding their longevity. The gasket arrangement inside this particular solenoid valve requires a minimum pressure of 3 PSI for the solenoid valve to open. With a water pressure regulator of 25 PSI upstream, I'm not concerned about meeting the minimum pressure requirements. If the specifications in your system are different, make sure you meet the minimum pressure. If a hardier valve is needed, comparable metal ones to this can be implemented. These solenoid valves also come with a mesh filter built in, which is another bonus safeguard against damage to the drip system.
 
-## 7. Other electical components
+## 7. Other electrical components
 
-Multimeter, eletrical tape, lots and lots of wires,
-Let's talk more weatherproofing. The system has some built in weatherproofing of electical components with the 3D enclosure 
+In addition to the electrical components already covered, a number of other supplies are required to create an AmaFi:
+
+* A soldering iron with a fine tip and solder are required. I'm not going to claim to be a soldering expert nor am I going to cover the topic in much detail here. There are plenty of great resources for learning online
+
+* Along with Multimeter, electrical tape, lots and lots of wires,
+Let's talk more weatherproofing. The system has some built in weatherproofing of electical components with the 3D enclosure
 
 ## 8. Backflow Preventer
 
@@ -124,9 +128,9 @@ Backflow preventers do exactly that - they prevent water from flowing backwards 
 
 In drip irrigation systems, water pressure regulators are essential for reducing water pressure to a level that the system can handle. Utilizing the correct water pressure for a drip system is important to assure that accurate volumes of water are applied and for the long-term longevity of the system. For most vegetable gardens and some other low-flow systems, a water pressure regulator that reduces water pressure to 25 PSI is adequate. I went with this [25 PSI Senninger 3/4" Hose Thread Pressure Regulator](https://www.dripdepot.com/item/senninger-three-quarter-inch-hose-thread-pressure-regulator-psi-25-psi)
 
-## 10. Water Filter 
+## 10. Water Filter
 
-The water filter in an irrigation system such as this acts as a safe guard against damage that the driplines could incur in a worst case scenario where particulate matter contaminated the main water supply. Since the dripline used in this systen have built in emitters, a 150 micron mesh filter will do the job. 
+The water filter in an irrigation system such as this acts as a safe guard against damage that the driplines could incur in a worst case scenario where particulate matter contaminated the main water supply. Since the dripline used in this systen have built in emitters, a 150 micron mesh filter will do the job.
 [](https://www.dripdepot.com/product/three-quarter-inch-hose-thread-filter)
 
 ## 11. PVC Components
@@ -163,7 +167,7 @@ The mainline is also known as the supply line because it feeds water from upstre
 
 ## 15. Dripline
 
-Similar to mainline, dripline can be made from a number of materials in a range of sizes. 
+Similar to mainline, dripline can be made from a number of materials in a range of sizes.
 
 [1/4" Polyethylene Dripline](https://www.dripdepot.com/item/quarter-inch-polyethylene-dripline-emitter-spacing-6-inch-flow-rate-half-gph-roll-length-50-feet-color-black)
 
@@ -172,25 +176,25 @@ Similar to mainline, dripline can be made from a number of materials in a range 
 [1/2" Perma-loc Cap](https://www.dripdepot.com/item/irritec-perma-loc-tubing-end-cap-perma-loc-size-half-inch)
 [Goof Plugs](https://www.dripdepot.com/item/goof-plug-size-quarter-inch)
 
-## 17. Other irrigation components 
+## 17. Other irrigation components
 
 Additional materials that are required to build this drip irrigation system include: PVC primer and cement, plumber's tape, painter's tape
 
 # Bill of Materials (BOM)
 
-| Syntax      | Item                           | pcs   | Comment                      |
+| Ref | Item                           | pcs   | Comment                      |
 | --- | ------------------------------ | ----- | ---------------------------- |
 | 1   | Raspberry Pi Zero W            |   1   |                              |
 | 2   | Samsung Pro 32 GB microSD card |   1   |                              |
 | 3   | MicroUSB Power Supply          |   1   |                              |
-| 4   |     |       |                              |
-| 5   | Raspberry Pi Zero W            |   1   |                              |
+| 4   | Non-latching Mini Relay        |   3   |                              |
+| 5   | 1/2" 12V Plastic Solenoid Valve|   3   |                              |
 | 6   | TCA9548A I2C Multiplexer       |   1   |                              |
-| 7   | Raspberry Pi Zero W            |   1   |                              |
+| 7   | Half-sized Permaboard          |   2   |                              |
 | 8   | Backflow Preventer             |   1   |                              |
 | 9   | Water Pressure Regulator       |   1   |                              |
 | 10  | 150 Micron Water Filter        |   1   |                              |
-| 11  | Raspberry Pi Zero W            |   1   |                              |
+| 11  | Capacitive Soil Moisture Sensor|   6   |                              |
 | 12  | Samsung Pro 32 GB microSD card |       |                              |
 | 13  | Samsung Pro 32 GB microSD card |       |                              |
 | 14  | Raspberry Pi Zero W            |   1   |                              |
@@ -200,7 +204,7 @@ Additional materials that are required to build this drip irrigation system incl
 | 18  | Raspberry Pi Zero W            |   1   |                              |
 | 19  | Samsung Pro 32 GB microSD card |       |                              |
 
-# User Manual 
+# User Manual
 
 # FAQs
 
@@ -208,11 +212,9 @@ Additional materials that are required to build this drip irrigation system incl
 
 * Sometimes the Seesaw package in Python uses the default I2C address rather than the specified 0x3
 
-# License 
+# License
 
 The AmaFi device is licensed under Open-source hardware, licensed by ???:
 * Hardware is licensed under ?
 * Software is licensed under ?
 * Documentation is licensed under ?
-
-
