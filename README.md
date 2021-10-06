@@ -189,11 +189,11 @@ Additional materials that are required to build this drip irrigation system incl
 | 3   | MicroUSB Power Supply          |   1   |                              |
 | 4   |     |       |                              |
 | 5   | Raspberry Pi Zero W            |   1   |                              |
-| 6   | Samsung Pro 32 GB microSD card |       |                              |
+| 6   | TCA9548A I2C Multiplexer       |   1   |                              |
 | 7   | Raspberry Pi Zero W            |   1   |                              |
-| 8   | Samsung Pro 32 GB microSD card |       |                              |
-| 9   | Raspberry Pi Zero W            |   1   |                              |
-| 10  | 150 Micron Water Filter        |       |                              |
+| 8   | Backflow Preventer             |   1   |                              |
+| 9   | Water Pressure Regulator       |   1   |                              |
+| 10  | 150 Micron Water Filter        |   1   |                              |
 | 11  | Raspberry Pi Zero W            |   1   |                              |
 | 12  | Samsung Pro 32 GB microSD card |       |                              |
 | 13  | Samsung Pro 32 GB microSD card |       |                              |
