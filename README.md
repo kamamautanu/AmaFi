@@ -17,8 +17,8 @@ AmaFi Waterwise Irrigation System
   What is next for AmaFi?
 
 Components Details
-  1.  [Microprocessor](##-1.-Microprocessor) 
-  2.  [Case]()
+  1.  [Microprocessor](https://github.com/kamamautanu/AmaFi/blob/main/README.md#1-microprocessor) 
+  2.  [Case](https://github.com/kamamautanu/AmaFi/blob/main/README.md#2-case)
   3.  [Soil Moisture Sensor]()
   4.  [Relay]()
   5.  [Solenoid Valve]() 
