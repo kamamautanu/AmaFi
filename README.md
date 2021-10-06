@@ -35,21 +35,21 @@ Components Details
   16. [Plugs and Caps](https://github.com/kamamautanu/AmaFi/blob/main/README.md#16-plugs-and-caps)
   17. [Other irrigation components](https://github.com/kamamautanu/AmaFi/blob/main/README.md#17-other-irrigation-components)  
   
-Bill of Materials (BOM)
+[Bill of Materials (BOM)](https://github.com/kamamautanu/AmaFi/blob/main/README.md#bill-of-materials-BOM)
 
-Firmware
+[Firmware](https://github.com/kamamautanu/AmaFi/blob/main/README.md#firmware)
 
-Schematic
+[Schematic](https://github.com/kamamautanu/AmaFi/blob/main/README.md#schematic)
 
 [User Manual](https://github.com/kamamautanu/AmaFi/blob/main/README.md#user-manual)
 
-FAQ
+[FAQs](https://github.com/kamamautanu/AmaFi/blob/main/README.md#faqs)
 
-Tech Details
+[Tech Details](https://github.com/kamamautanu/AmaFi/blob/main/README.md#tech-details)
 
-Bugs
+[Bugs](https://github.com/kamamautanu/AmaFi/blob/main/README.md#bugs)
 
-License
+[License](https://github.com/kamamautanu/AmaFi/blob/main/README.md#license)
 
 # What is AmaFi?
 
