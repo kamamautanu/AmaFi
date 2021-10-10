@@ -135,13 +135,8 @@ The water filter in an irrigation system such as this acts as a safe guard again
 
 ## 11. PVC Components
 
-There are a number of ways to connect the main valve to the drip irrigation system. I wanted my system to be as sturdy and look as sleek as possible, so I decided to run PVC pipe to as close to my solenoids as I could. This involved digging an 18" deep, 8' long trench through hard clay soil from my main valve to my garden bed. I could have used a roter tiller to do the hard labor for me, but I also wasn't sure where other pipes may have been located, so I took the more cautious and laborous route. I happened to have more than enough 3/4" PVC pipe laying around from a previous irrigation project and fortuitously enou
-
-[3/4" Hydro-rain Tee PVC Lock with 1/2" Female Outlet](https://www.dripdepot.com/item/hydro-rain-pvc-lock-combination-tee-size-three-quarter-inch-pvcl-x-half-inch-fpt)
-
-[3/4" Hydro-rain PVC Lock Elbow](https://www.dripdepot.com/item/hydro-rain-pvc-lock-elbow-size-three-quarter-inch)
-
-[3/4" Hydro-rain PVC Lock Elbow to 1/2" Female Outlet](https://www.dripdepot.com/item/hydro-rain-pvc-lock-combination-elbow-size-three-quarter-inch-pvcl-x-half-inch-fpt)
+There are a number of ways to connect the main valve to the drip irrigation system. I wanted my system to be as sleek and sturdy as possible, so I decided to run PVC pipe to as close to my solenoids as I could. This involved digging an 18" deep, 12' long trench through hard clay soil from my main valve to my garden bed. I could have used a rotor tiller to do the hard labor for me, but I also wasn't sure where other pipes were, so I took the more cautious and laborous route. I happened to have more than enough 3/4" PVC pipe laying around from a previous irrigation project and the main valve that was already installed happened to be 3/4", so I stuck with this size for all of my PVC Components. I found these cool [elbow](https://www.dripdepot.com/item/hydro-rain-pvc-lock-elbow-size-three-quarter-inch) and [tee](https://www.dripdepot.com/item/hydro-rain-pvc-lock-combination-tee-size-three-quarter-inch-pvcl-x-half-inch-fpt) PVC locks in the 3/4" size I needed for my PVC components that had a 1/2" female outlet to connect the solenoid valves. 
+They
 
 [3/4" Hydro-rain PVC Lock Coupler](https://www.dripdepot.com/item/hydro-rain-pvc-lock-coupler-size-three-quarter-inch)
 
