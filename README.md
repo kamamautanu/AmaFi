@@ -1,8 +1,18 @@
 # AmaFi
-Automated waterwise irrigation system
+Automated water-wise irrigation system
+
+As someone new to the world of engineering, a friend encouraged me to create something that would make life easier for me. Something like automating watering in my garden so I don't spend 6 or more hours a week doing it by hand during the heat of summer. Initially I resisted the idea of integrating technology into my gardening space, but as spring turned into summer and the hot California sun blasted my garden full force, what had once been a labor of love quickly turned into feelings of frustration at both the amount of time I spent watering and the amount of water I was using during a "mega-drought".
+
+Water scarcity isn't an issue of the future, it's happening right here and now. Enter the AmaFi. The AmaFi only applies water where plants need it and when. No more worrying about over or under watering, the AmaFi takes out the guess work in growing drought resiliant gardens while conserving water compared to conventional methods. The AmaFi does this by integrating a number of gardening theories and features:
+  * [deep watering](What's the science behind deep watering?) - water less often for longer for deeper moisture penetration
+  * [drip irrigation]() - reduces evapotranspiration, plant disease, and efficiently waters deeply
+  * [irrigation zones] - three watering zones for crops based on rooting depth categories - low, medium, high
+  * insights into
 
 
-The effeciency of drip irrigation systems has been known for some time. In some systems, water usage can be reduced by 20 to 30%. In a world where water rations are no longer
+
+
+The efficiency of drip irrigation systems has been known for some time. In some systems, water usage can be reduced by 20 to 30%. In a world where water rations are no longer
 
 
 # Table of Contents
@@ -53,43 +63,21 @@ I was inspired to create AmaFi to reduce the amount of time and water required b
 
 # What is next for AmaFi?
 
-Four words - going solar and wireless. That's right, now that I have a functioning system up and running I can focus on making improvements to my system.
+Four words - going solar and wireless. That's right, now that I have a functioning system up and running I can focus on making improvements.
 
 # Component Details
 
 ## 1. Microprocessor
 
-For this project I chose the common microprocessor Raspberry Pi Zero W. It's compact, inexpensive, and has more than enough capacity and power for the tasks we'll be performing. According to ?, the ? microSD card has the best long-term performance with RasPi Zero W, so I purchased a 32 GB one and formatted it with the latest version of Rasperry Pi OS at the time of this writing (Buster). The microUSB port on the RasPi Zero W is used to power the system through a DC adapter plugged into a power outlet. Some of the other RasPi Zero W features utilized in this project are built in WiFi configured using headless setup, the I2C Interface, both the 3.3V and 5V power rails, digital pins that can be pulled high, among others. Once I had my RasPi booted, I did a simple nmap network scan to determine what IP address the RaspPi was using on my local network:
+The AmaFi uses the common microprocessor Raspberry Pi Zero W. It's compact, inexpensive, and has more than enough capacity and power for the AmaFi system.
 
-`nmap -sn YOURROUTERIP/24`
+Any Raspberry Pi requires a formatted microSD card and with hundreds of them on the market, the decision paralysis can set in quickly. The AmaFi uses a plant monitoring system that stores soil moisture and ambient temperature measurements in an in-memory SQLite database for later crop stress index calculations. While SQLite itself is lightweight, a microSD card with enough memory to store sensor readings long-term is critical. The AmaFi is also housed outdoors and while several weatherproofing techniques are used, the long-term performance of a microSD card is another critical factor in choosing one. With this in mind, I did some research to find a card with plenty of memory that was best for long-term performance and would perform *well enough* on the RasPi Zero W. My research led my to choose a 32GB Samsung Pro Endurance. It doesn't seem that anyone actually knows whether this microSD card lives up to the claims yet, but I figured it was worth a shot for starters. For more information about choosing a microSD for the RasPi, I found [this post](https://www.tomshardware.com/best-picks/raspberry-pi-microsd-cards) to be a good resource.
 
-With this information you simply ssh into the RasPi using these default credentials user:pi and password:raspberry and immediately change your password to something secure. If you haven't already, you'll have to update and install all the dependencies for CircuitPython, Seesaw, and other Python modules. For an in depth guide to configuring CircuitPython on your RasPi, you can view the Adafruit documentation. Otherwise, here's the code I ran to configure my setup:
-
-`sudo apt-get update`
-
-`sudo apt-get upgrade`
-
-`sudo apt-get install python3-pip`
-
-`sudo pip3 install --upgrade setuptools`
-
-`cd ~`
-
-`sudo pip3 install --upgrade adafruit-python-shell`
-
-`wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/raspi-blinka.py`
-
-`sudo python3 raspi-blinka.py`
-
-`sudo pip3 install adafruit-circuitpython-seesaw`
-
-`sudo pip3 install time`
-
-`sudo pip3 install `
+The microUSB port on the RasPi Zero W powers the system through a DC adapter plugged into a power outlet. Some of the other RasPi Zero W features utilized in this project are built in WiFi configured using headless setup, the I2C Interface, both the 3.3V and 5V power rails, digital pins that can be pulled high, among others.
 
 ## 2. Case
 
-Since the electronic components of this system are housed outdoors, thorough weatherproofing was especially imperative to the longevity of the device. With this in consideration, I decided to design a 3D enclosure in OpenSCAD and then used Cura to convert the model into 3D printable g-code. The enclosure has slots on the back for zip ties for easy securing, two pegs inside spaced to hold two [half-sized Adafruit Permaboards](https://www.adafruit.com/product/571?gclid=CjwKCAjw7--KBhAMEiwAxfpkWNDp2fVAYD2DaYGyx_mDr8xRZU1jsX9PKZduE_mgTrSk0uKAj7SYvhoCk74QAvD_BwE), and a removable bottom with six 1/2 inch circle cutouts for wires and a small spot to use a screwdriver to pop the bottom out. For more information, the complete details can be found HERE. Since PLA is not UV resistant, I simply used some sand paper to abrade the exterior of the case and applied a coating of UV resistant ??? on the outside.
+Since the electronic components of this system are located outdoors, thorough weatherproofing is especially imperative to the longevity of the device. With this in mind, a 3D enclosure was designed in OpenSCAD and Cura was used to convert the model into 3D printable g-code. The enclosure features 2 supports with zip tie slots, 2 internal pegs to mount 2 [half-sized Adafruit Permaboards](https://www.adafruit.com/product/571?gclid=CjwKCAjw7--KBhAMEiwAxfpkWNDp2fVAYD2DaYGyx_mDr8xRZU1jsX9PKZduE_mgTrSk0uKAj7SYvhoCk74QAvD_BwE), and a removable bottom that has 6 - 1/2 inch cylindrical cutouts for wires and a polygoon cutout for power adapters. The details for the AmaFi enclosure can be found [here](https://github.com/kamamautanu/AmaFi/tree/main/case). 
 
 ## 3. Soil Moisture Sensor
 
@@ -122,7 +110,7 @@ Let's talk more weatherproofing. The system has some built in weatherproofing of
 
 ## 8. Backflow Preventer
 
-Backflow preventers do exactly that - they prevent water from flowing backwards and back into the main water supply, thus preventing potential contamination. There are metal and plastic backflow preventers depending on a system's unique requirements. Here, I decided to go for a [brass backflow preventer](https://www.dripdepot.com/product/aqualine-brass-three-quarter-inch-hose-end-vacuum-breaker) since I connected mine directly to the main valve.
+Backflow preventers do exactly that - they prevent water from flowing backwards and back into the main water supply, thus preventing potential contamination. There are metal and plastic backflow preventers to use depending on a system's unique requirements. Here, I decided to go for a [brass backflow preventer](https://www.dripdepot.com/product/aqualine-brass-three-quarter-inch-hose-end-vacuum-breaker) since I connected mine directly to the main valve.
 
 ## 9.  Water Pressure Regulator
 
@@ -135,14 +123,11 @@ The water filter in an irrigation system such as this acts as a safe guard again
 
 ## 11. PVC Components
 
-There are a number of ways to connect the main valve to the drip irrigation system. I wanted my system to be as sleek and sturdy as possible, so I decided to run PVC pipe to as close to my solenoids as I could. This involved digging an 18" deep, 12' long trench through hard clay soil from my main valve to my garden bed. I could have used a rotor tiller to do the hard labor for me, but I also wasn't sure where other pipes were, so I took the more cautious and laborous route. I happened to have more than enough 3/4" PVC pipe laying around from a previous irrigation project and the main valve that was already installed happened to be 3/4", so I stuck with this size for all of my PVC Components. I found these cool [elbow](https://www.dripdepot.com/item/hydro-rain-pvc-lock-elbow-size-three-quarter-inch) and [tee](https://www.dripdepot.com/item/hydro-rain-pvc-lock-combination-tee-size-three-quarter-inch-pvcl-x-half-inch-fpt) PVC locks in the 3/4" size I needed for my PVC components that had a 1/2" female outlet to connect the solenoid valves. 
-They
+There are a number of ways to connect the main valve to the drip irrigation system. I wanted my system to be as sleek and sturdy as possible, so I decided to run PVC pipe to as close to my solenoids as I could. This involved digging an 18" deep, 12' long trench through hard clay soil from my main valve to my garden bed. I could have used a rotor tiller to do the hard labor for me, but I also wasn't sure where other pipes were, so I took the more cautious and laborious route. I happened to have more than enough 3/4" PVC pipe laying around from a previous irrigation project and the main valve that was already installed happened to be 3/4", so I stuck with this size for all of my PVC Components.
 
-[3/4" Hydro-rain PVC Lock Coupler](https://www.dripdepot.com/item/hydro-rain-pvc-lock-coupler-size-three-quarter-inch)
+![]()
 
-[3/4" Schedule 40 PVC F](https://www.dripdepot.com/item/schedule-40-pvc-adapter-fpt-by-slip-slip-size-three-quarter-inch-fpt-size-three-quarter-inch)
-
-[3/4" Schedule 40 PVC 45 Degree Elbow Slip](https://www.dripdepot.com/item/schedule-40-pvc-45-degree-slip-elbow-size-three-quarter-inch)
+I found these cool [elbow](https://www.dripdepot.com/item/hydro-rain-pvc-lock-elbow-size-three-quarter-inch) and [tee](https://www.dripdepot.com/item/hydro-rain-pvc-lock-combination-tee-size-three-quarter-inch-pvcl-x-half-inch-fpt) PVC locks in the 3/4" size I needed for my PVC components that had a 1/2" female outlet to connect the solenoid valves, I also grabbed one of these [couplers](https://www.dripdepot.com/item/hydro-rain-pvc-lock-coupler-size-three-quarter-inch). These PVC components are great because you can just slide your PVC pipe in, give it a little tug, and you're good to go - no harsh solvents or waiting for things to dry and cure. Unfortunately, there were PVC components I needed that aren't available with Hydo-rain locks, so I also grabbed a [45 degree elbow](https://www.dripdepot.com/item/schedule-40-pvc-45-degree-slip-elbow-size-three-quarter-inch) and an [FPT PVC adapter](https://www.dripdepot.com/item/schedule-40-pvc-adapter-fpt-by-slip-slip-size-three-quarter-inch-fpt-size-three-quarter-inch), which are required in this set-up. PVC primer and cement are needed to secure the connections.
 
 ## 12. Valves
 
@@ -201,15 +186,93 @@ Additional materials that are required to build this drip irrigation system incl
 
 # User Manual
 
+## Getting started
+
+  1. Download the appropriate version of [Raspberry Pi Imager](https://www.raspberrypi.com/software/) for your Operating System.
+
+  2. Open Raspberry Pi Imager and insert the microSD card into the machine. Select the most current version of Raspberry Pi OS (Buster at the time of this writing), the microSD to burn the disk image to, and write the file - this could take a little bit of time.
+
+  3. Configure headless setup on the RasPi and enable ssh. The documentation is [here](https://www.raspberrypi.com/documentation/computers/configuration.html#setting-up-a-headless-raspberry-pi).
+
+  4. Plug the RasPi into the power supply and allow it to boot, this can take up to 5 minutes. If the previous steps were done correctly, the RasPi will automatically connect to the specified WiFi network at boot.
+
+  5. To remotely connect to the RasPi using SSH, the IP address its using will need to be enumerated. There are a number of ways to do this, here the network scanning tool [nmap](https://nmap.org/download.html) is used. The following code can be used on the command line version of nmap or in the graphical user interface (GUI) of nmap, Zenmap:
+
+  `nmap -sn YOURROUTERIP/24`
+
+  6. SSH into the RasPi using the default credentials user:pi and password:raspberry and this line of code:
+
+  `ssh -X pi@IPADDRESS`
+
+  The -X option allows a program's GUI to be forwarded using ssh, it is required here to manually configure features on the RasPi.
+
+  7. At login instructions to reset the password are given - change it to something secure and at the least write it down somewhere you'll remember.
+
+  8. Since the AmaFi system is programmed in CircuitPython, some initial setup is required for the RasPi. update and install all the dependencies for CircuitPython, Seesaw, and other Python modules. For an in depth guide to configuring CircuitPython on your RasPi, you can view the Adafruit documentation. Otherwise, here's the code I ran to configure my setup:
+
+  ***Turn this into py file that i reference***
+
+  `sudo apt-get update`
+
+  `sudo apt-get upgrade`
+
+  `sudo apt-get install python3-pip`
+
+  `sudo pip3 install --upgrade setuptools`
+
+  `cd ~`
+
+  `sudo pip3 install --upgrade adafruit-python-shell`
+
+  `wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/raspi-blinka.py`
+
+  `sudo python3 raspi-blinka.py`
+
+  `sudo pip3 install adafruit-circuitpython-seesaw`
+
+  `sudo pip3 install time`
+
+  `sudo pip3 install `
+
+
+
+
+
+To start with the AmaFi, you will need an
+
 # FAQs
+
+What's the science behind deep watering?
+
+  When plants receive water more frequently in lower volumes, the water does not penetrate deeply into the soil, but the top layer of soil will be more moist more often. When this happens, plant roots are not encouraged to grow deeply into the soil and instead stay in the most shallow upper layer. When drought hits, these plants are not resilient and may suffer severe damage.
+
+How do you encourage roots to grow deeply?
+
+  By withholding water just long enough that crops enter the very initial stages of water stress, but not long enough to for irreversible damage to incur. This triggers the production of a hormone called Abscisic Acid (ABA). As ABA production increases it triggers roots to grow deeper into the soil to seek moisture. Increased root surface area in deeper parts of the soil ultimately makes plants more resilient to drought.
+
+ How does watering deeply conserve water?
+
+ Watering deeply reduces
+
+ What are the limitations of watering deeply?
+
+ Heavy loam or clay soils can hold large volumes of water, but some soil types, namely sandy, drain too quickly and will require more frequent watering regardless. Adding organic mater to soil types like this can substantially increase the water holding capacity of the soil. Watering deeply is also not recommended when seeds or seedlings have yet to establish, as they won't be able to access water in the deeper soil layers.
+
+ What type of irrigation system is best for watering deeply?
+
+ If you ask me, drip irrigation all the way! Of course each type of system has unique requirements, but generally other types of irrigation systems, especially those involving overhead watering, apply water to the top soil level, usually at higher rates than the soil is able to absorb. This produces water waste in the form of runoff. In overhead irrigation systems, water is also lost in the form of evaporation, both off the surfaces of the soil and foliage. Overhead watering is also associated with an increase risk of disease in some plants as applying water to foliage often encourages bacterial and fungal growth. Drip irrigation does not water the top layer of soil in the same way. The trickling of water in this micro-irrigation system means that, when done correctly, water does not pool on the soil surface and instead is slowly absorbed into deeper layers of the soil over longer periods of time.   
 
 # Known Bugs
 
-* Sometimes the Seesaw package in Python uses the default I2C address rather than the specified 0x3
+* Occasionally when the watering program is ran, the following error is returned:
+
+`Seesaw hardware ID returned (0xd5) is not correct! Expected 0x55. Please check wiring.`
+
+  When this happens, CircuitPython is using the default Seesaw I2C address 0x55 instead of the address, 0x36, that has been specified in the program for soil moisture sensors. I'm not sure why this happens, but thankfully the error is mostly just an annoyance as it occurs infrequently and the watering program can simply be ran again.
 
 # License
 
-The AmaFi device is licensed under Open-source hardware, licensed by ???:
+The AmaFi device is licensed under Open-source hardware, licensed b. Other y ???:
 * Hardware is licensed under ?
 * Software is licensed under ?
 * Documentation is licensed under ?
