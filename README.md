@@ -1,28 +1,20 @@
 # AmaFi
 Automated water-wise irrigation system
 
-As someone new to the world of engineering, a friend encouraged me to create something that would make life easier for me. Something like automating watering in my garden so I don't spend 6 or more hours a week doing it by hand during the heat of summer. Initially I resisted the idea of integrating technology into my gardening space, but as spring turned into summer and the hot California sun blasted my garden full force, what had once been a labor of love quickly turned into feelings of frustration at both the amount of time I spent watering and the amount of water I was using during a "mega-drought".
+As someone new to the world of engineering, a friend encouraged me to create something that would make life easier for me. Something like automating watering in my garden so I don't spend 6 or more hours a week doing it by hand during the heat of summer. Initially, I resisted the idea of integrating technology into my gardening space, but as spring turned into summer and the hot California sun blasted my garden full force, what had once been a labor of love quickly turned into feelings of frustration at both the amount of time I spent watering and the amount of water I was using during a "mega-drought".
 
 Water scarcity isn't an issue of the future, it's happening right here and now. Enter the AmaFi. The AmaFi only applies water where plants need it and when. No more worrying about over or under watering, the AmaFi takes out the guess work in growing drought resiliant gardens while conserving water compared to conventional methods. The AmaFi does this by integrating a number of gardening theories and features:
-  * [deep watering](What's the science behind deep watering?) - water less often for longer for deeper moisture penetration
+  * [deep watering]() - water less often for longer for deeper moisture penetration
   * [drip irrigation]() - reduces evapotranspiration, plant disease, and efficiently waters deeply
-  * [irrigation zones] - three watering zones for crops based on rooting depth categories - low, medium, high
-  * insights into
-
-
-
-
-The efficiency of drip irrigation systems has been known for some time. In some systems, water usage can be reduced by 20 to 30%. In a world where water rations are no longer
-
+  * [irrigation zones] - three watering zones for crops based on rooting depth categories - low, medium, high.
 
 # Table of Contents
-AmaFi Waterwise Irrigation System
 
   [What is AmaFi?](https://github.com/kamamautanu/AmaFi/blob/main/README.md#what-is-amafi)
-
+  
   [What is next for AmaFi?](https://github.com/kamamautanu/AmaFi/blob/main/README.md#what-is-next-for-amafi)
 
-Components Details
+Component Details
   1.  [Microprocessor](https://github.com/kamamautanu/AmaFi/blob/main/README.md#1-microprocessor)
   2.  [Case](https://github.com/kamamautanu/AmaFi/blob/main/README.md#2-case)
   3.  [Soil Moisture Sensor](https://github.com/kamamautanu/AmaFi/blob/main/README.md#3-soil-moisture-sensor)
@@ -53,17 +45,17 @@ Components Details
 
 [Tech Details](https://github.com/kamamautanu/AmaFi/blob/main/README.md#tech-details)
 
-[Bugs](https://github.com/kamamautanu/AmaFi/blob/main/README.md#bugs)
+[Known Bugs](https://github.com/kamamautanu/AmaFi/blob/main/README.md#known-bugs)
 
 [License](https://github.com/kamamautanu/AmaFi/blob/main/README.md#license)
 
 # What is AmaFi?
 
-I was inspired to create AmaFi to reduce the amount of time and water required by my garden.
+I was inspired to create AmaFi to reduce the amount of time and water required by my garden. Ama, or more properly ᎠᎹ, is the Cherokee word for water and my watering system is powered by WiFi. How cool is that!
 
 # What is next for AmaFi?
 
-Four words - going solar and wireless. That's right, now that I have a functioning system up and running I can focus on making improvements.
+Four words - going solar and wireless. That's right, now that I have a functioning system up and running I can focus on making improvements. Check out some of my PCB designs in the making to improve the soil moisture sensors by trying to maximize parasitic capacitance. 
 
 # Component Details
 
@@ -71,7 +63,7 @@ Four words - going solar and wireless. That's right, now that I have a functioni
 
 The AmaFi uses the common microprocessor Raspberry Pi Zero W. It's compact, inexpensive, and has more than enough capacity and power for the AmaFi system.
 
-Any Raspberry Pi requires a formatted microSD card and with hundreds of them on the market, the decision paralysis can set in quickly. The AmaFi uses a plant monitoring system that stores soil moisture and ambient temperature measurements in an in-memory SQLite database for later crop stress index calculations. While SQLite itself is lightweight, a microSD card with enough memory to store sensor readings long-term is critical. The AmaFi is also housed outdoors and while several weatherproofing techniques are used, the long-term performance of a microSD card is another critical factor in choosing one. With this in mind, I did some research to find a card with plenty of memory that was best for long-term performance and would perform *well enough* on the RasPi Zero W. My research led my to choose a 32GB Samsung Pro Endurance. It doesn't seem that anyone actually knows whether this microSD card lives up to the claims yet, but I figured it was worth a shot for starters. For more information about choosing a microSD for the RasPi, I found [this post](https://www.tomshardware.com/best-picks/raspberry-pi-microsd-cards) to be a good resource.
+Any Raspberry Pi requires a formatted microSD card and with hundreds of them on the market, the decision paralysis can set in quickly. The AmaFi is housed outdoors and while several weatherproofing techniques are used, the long-term performance of a microSD card is another critical factor in choosing one. With this in mind, I did some research to find a card with plenty of memory that was best for long-term performance and would perform *well enough* on the RasPi Zero W. My research led my to choose a 32GB Samsung Pro Endurance. It doesn't seem that anyone actually knows whether this microSD card lives up to the claims yet, but I figured it was worth a shot for starters. For more information about choosing a microSD for the RasPi, I found [this post](https://www.tomshardware.com/best-picks/raspberry-pi-microsd-cards) to be a good resource.
 
 The microUSB port on the RasPi Zero W powers the system through a DC adapter plugged into a power outlet. Some of the other RasPi Zero W features utilized in this project are built in WiFi configured using headless setup, the I2C Interface, both the 3.3V and 5V power rails, digital pins that can be pulled high, among others.
 
@@ -81,45 +73,42 @@ Since the electronic components of this system are located outdoors, thorough we
 
 ## 3. Soil Moisture Sensor
 
-Soil moisture sensors use either resistive or capacitive sensing. Resistive sensors impute the volumentric content of water by measuring the current that passes through the soil between the two sensor prongs to get a resistance value. By design resistive sensors corrode quickly as current runs through the exposed soil probes causing electrolysis. On the other hand, capacitive sensing measures the dielectic formed by the soil and is actually a more accurate measure of soil moisture content compared to resistive sensing. Something like applying fertilizer would decrease the resistance sensor reading, but the most important factor influencing dielectic measurements taken by capacitance sensors is water. Capacitive sensors themselves are made out of a more corrossion resistive material, meaning they last longer than metal resistive sensors. I chose to go with the [Adafruit Capacitive Soil Moisture Sensor](https://www.adafruit.com/product/4026?gclid=CjwKCAjw7--KBhAMEiwAxfpkWMQuIcPafbgoi9CuEed3x9IhuxPp1O-SNFmeNOMi5Y8YBAmQ2-u-ShoCTOsQAvD_BwE). It runs on the I2C Bus, uses the MIT license, and comes with the added bonus of a temperature sensor that is accurate to +/- 2 degrees Celcius.     
+Soil moisture sensors use either resistive or capacitive sensing. Resistive sensors impute the volumentric content of water by measuring the current that passes through the soil between the two sensor prongs to get a resistance value. By design resistive sensors corrode quickly as current runs through the exposed soil probes causing electrolysis. On the other hand, capacitive sensing measures the dielectic formed by the soil and is actually a more accurate measure of soil moisture content compared to resistive sensing. Something like applying fertilizer would decrease the resistance sensor reading, but the most important factor influencing dielectic measurements taken by capacitance sensors is water. Capacitive sensors themselves are made out of a more corrossion resistive material, meaning they last longer than metal resistive sensors. I chose to go with the [Adafruit Capacitive Soil Moisture Sensor](https://www.adafruit.com/product/4026?gclid=CjwKCAjw7--KBhAMEiwAxfpkWMQuIcPafbgoi9CuEed3x9IhuxPp1O-SNFmeNOMi5Y8YBAmQ2-u-ShoCTOsQAvD_BwE). It runs on the I2C Bus, uses the MIT license, and comes with the added bonus of a temperature sensor that is accurate to +/- 2 degrees Celcius, which is good enough for my purposes.     
 
 ## 4. I2C Multiplexer
 
-The Inter-Integrated Circuit (I2C) Interface on the Raspberry Pi allows multiple I2C devices to be connected to one I2C Bus as long as each device has a unique I2C address, multiple instances of the same address are not allowed. An I2C Multiplexer allows multiple I2C sensors with the same I2C address to be connected to different channels on the multiplexer, thus allowing multiple sensors with the same I2C address to connect to one I2C Bus. One multiplexer was plenty for the 6 soil moisture sensors I needed to connect, but multiple Multiplexers could be implemented. [TCA9548A I2C Multiplexer](https://www.adafruit.com/product/2717?gclid=CjwKCAjw7--KBhAMEiwAxfpkWJfjOfjJrfvSvOHVA4LUwrq7fYuRUEg9kGJ12MZfuS3dDWTGXzFlyBoCTxQQAvD_BwE)
+The Inter-Integrated Circuit (I2C) Interface on the Raspberry Pi allows multiple I2C devices to be connected to one I2C Bus as long as each device has a unique I2C address - multiple instances of the same address are not allowed. An I2C multiplexer allows multiple I2C sensors with the same I2C address to be connected to different channels on the multiplexer, thus allowing multiple sensors with the same I2C address to connect to one I2C Bus. One multiplexer was plenty for the 6 soil moisture sensors I needed to connect, but it is possible to implement more. I chose the [TCA9548A I2C Multiplexer](https://www.adafruit.com/product/2717?gclid=CjwKCAjw7--KBhAMEiwAxfpkWJfjOfjJrfvSvOHVA4LUwrq7fYuRUEg9kGJ12MZfuS3dDWTGXzFlyBoCTxQQAvD_BwE) from Adafruit.
 
 ## 5. Relay
 
-In order to create three irrigation zones that operated and could be water idependently of one another, I had to utilize three relays. These relays run on digital GPIO pins that can be pulled high on the Raspberry Pi
-
-[Adafruit STEMMA Non-Latching Mini Relay](https://www.adafruit.com/product/4409)
+In order to create three irrigation zones that operated and could be water idependently of one another, I had to utilize three relays. These relays run on digital GPIO pins that can be pulled high on the Raspberry Pi. Continuing the open source theme, I used the [Adafruit STEMMA Non-Latching Mini Relay](https://www.adafruit.com/product/4409).
 
 ## 6. Solenoid Valve
 
 ![Assembled solenoid valves](https://drive.google.com/file/d/1Zhye0jMJMZUY3EdAaPlFWvIvaAXun6sR/view?usp=sharing)
 
-Solenoid valves come in a variety of forms and sizes, but generally have two outlets for liquid and two terminals. I decided to go with the [Adafruit Plastic Solenoid Valve](https://www.adafruit.com/product/997?gclid=CjwKCAjw7--KBhAMEiwAxfpkWGRKpMUIVVWlzhXs_OLp8XZ043Juw9BMAwIWtjTDGVPNoWJCnroIphoCh2AQAvD_BwE) as an inexpensive solution. It is a unidirectional liquid solenoid valve with two threaded 1/2" outlets and is powered by 12V DC. The solenoid valve is normally closed and opens when 12V DC current are applied to the valve terminals. Since my solenoid valves are installed downstream of the water pressure regulator I do not have concerns regarding their longevity. The gasket arrangement inside this particular solenoid valve requires a minimum pressure of 3 PSI for the solenoid valve to open. With a water pressure regulator of 25 PSI upstream, I'm not concerned about meeting the minimum pressure requirements. If the specifications in your system are different, make sure you meet the minimum pressure. If a hardier valve is needed, comparable metal ones to this can be implemented. These solenoid valves also come with a mesh filter built in, which is another bonus safeguard against damage to the drip system.
+Solenoid valves come in a variety of forms and sizes, but generally have two outlets for liquid and two terminals. I decided to go with the [Adafruit Plastic Solenoid Valve](https://www.adafruit.com/product/997?gclid=CjwKCAjw7--KBhAMEiwAxfpkWGRKpMUIVVWlzhXs_OLp8XZ043Juw9BMAwIWtjTDGVPNoWJCnroIphoCh2AQAvD_BwE) as an inexpensive solution. It is a unidirectional liquid solenoid valve with two threaded 1/2" outlets and is powered by 12V DC. The solenoid valve is normally closed and opens when 12V DC current are applied to the valve terminals. Since my solenoid valves are installed downstream of the water pressure regulator I do not have concerns regarding their longevity. The gasket arrangement inside this particular solenoid valve requires a minimum pressure of 3 PSI for the solenoid valve to open. With a water pressure regulator of 25 PSI upstream, I'm not concerned about meeting the minimum pressure requirements. If the specifications in your system are different, make sure you meet the minimum pressure. If a hardier valve is needed, comparable metal ones can be implemented. These solenoid valves also come with a mesh filter built in, which is another bonus safeguard against damage to the drip system.
 
 ## 7. Other electrical components
 
 In addition to the electrical components already covered, a number of other supplies are required to create an AmaFi:
 
-* A soldering iron with a fine tip and solder are required. I'm not going to claim to be a soldering expert nor am I going to cover the topic in much detail here. There are plenty of great resources for learning online
+* A soldering iron with a fine tip and solder are required. I'm not going to claim to be a soldering expert nor am I going to cover the topic in much detail here. There are plenty of great resources for learning online.
 
 * Along with Multimeter, electrical tape, lots and lots of wires,
 Let's talk more weatherproofing. The system has some built in weatherproofing of electical components with the 3D enclosure
 
 ## 8. Backflow Preventer
 
-Backflow preventers do exactly that - they prevent water from flowing backwards and back into the main water supply, thus preventing potential contamination. There are metal and plastic backflow preventers to use depending on a system's unique requirements. Here, I decided to go for a [brass backflow preventer](https://www.dripdepot.com/product/aqualine-brass-three-quarter-inch-hose-end-vacuum-breaker) since I connected mine directly to the main valve.
+Backflow preventers do exactly that - they prevent water from flowing backwards and back into the main water supply, thus preventing potential contamination. There are metal and plastic backflow preventers to use depending on a system's unique requirements. Here, I decided to go for a [brass backflow preventer](https://www.dripdepot.com/product/aqualine-brass-three-quarter-inch-hose-end-vacuum-breaker).
 
 ## 9.  Water Pressure Regulator
 
-In drip irrigation systems, water pressure regulators are essential for reducing water pressure to a level that the system can handle. Utilizing the correct water pressure for a drip system is important to assure that accurate volumes of water are applied and for the long-term longevity of the system. For most vegetable gardens and some other low-flow systems, a water pressure regulator that reduces water pressure to 25 PSI is adequate. I went with this [25 PSI Senninger 3/4" Hose Thread Pressure Regulator](https://www.dripdepot.com/item/senninger-three-quarter-inch-hose-thread-pressure-regulator-psi-25-psi)
+In drip irrigation systems, water pressure regulators are essential for reducing water pressure to a level that the system can handle. Utilizing the correct water pressure for a drip system is important to assure that accurate volumes of water are applied and for the long-term longevity of the system. For most vegetable gardens and some other low-flow systems, a water pressure regulator that reduces water pressure to 25 PSI is adequate. I went with this [25 PSI Senninger 3/4" Hose Thread Pressure Regulator](https://www.dripdepot.com/item/senninger-three-quarter-inch-hose-thread-pressure-regulator-psi-25-psi).
 
 ## 10. Water Filter
 
-The water filter in an irrigation system such as this acts as a safe guard against damage that the driplines could incur in a worst case scenario where particulate matter contaminated the main water supply. Since the dripline used in this systen have built in emitters, a 150 micron mesh filter will do the job.
-[](https://www.dripdepot.com/product/three-quarter-inch-hose-thread-filter)
+The water filter in an irrigation system such as this acts as a safe guard against damage that the driplines could incur in a worst case scenario where particulate matter contaminates the main water supply. Since the dripline used in this systen have built in emitters, a [150 micron mesh filter](https://www.dripdepot.com/product/three-quarter-inch-hose-thread-filter) will do the job.
 
 ## 11. PVC Components
 
@@ -160,7 +149,7 @@ Similar to mainline, dripline can be made from a number of materials in a range 
 
 Additional materials that are required to build this drip irrigation system include: PVC primer and cement, plumber's tape, painter's tape
 
-# Bill of Materials (BOM)
+# Bill of Materials (BOM) 
 
 | Ref | Item                           | pcs   | Comment                      |
 | --- | ------------------------------ | ----- | ---------------------------- |
@@ -175,14 +164,10 @@ Additional materials that are required to build this drip irrigation system incl
 | 9   | Water Pressure Regulator       |   1   |                              |
 | 10  | 150 Micron Water Filter        |   1   |                              |
 | 11  | Capacitive Soil Moisture Sensor|   6   |                              |
-| 12  | Samsung Pro 32 GB microSD card |       |                              |
-| 13  | Samsung Pro 32 GB microSD card |       |                              |
+| 12  | Samsung Pro 32 GB microSD card |   1   |                              |
 | 14  | Raspberry Pi Zero W            |   1   |                              |
-| 15  | Samsung Pro 32 GB microSD card |       |                              |
-| 16  | Raspberry Pi Zero W            |   1   |                              |
-| 17  | Samsung Pro 32 GB microSD card |       |                              |
-| 18  | Raspberry Pi Zero W            |   1   |                              |
-| 19  | Samsung Pro 32 GB microSD card |       |                              |
+
+Note: Complete this list.
 
 # User Manual
 
@@ -196,7 +181,7 @@ Additional materials that are required to build this drip irrigation system incl
 
   4. Plug the RasPi into the power supply and allow it to boot, this can take up to 5 minutes. If the previous steps were done correctly, the RasPi will automatically connect to the specified WiFi network at boot.
 
-  5. To remotely connect to the RasPi using SSH, the IP address its using will need to be enumerated. There are a number of ways to do this, here the network scanning tool [nmap](https://nmap.org/download.html) is used. The following code can be used on the command line version of nmap or in the graphical user interface (GUI) of nmap, Zenmap:
+  5. To remotely connect to the RasPi using SSH, its IP address will need to be enumerated. There are a number of ways to do this, here the network scanning tool [nmap](https://nmap.org/download.html) is used. The following code can be used on the command line version of nmap or in the graphical user interface (GUI) of nmap, Zenmap:
 
   `nmap -sn YOURROUTERIP/24`
 
@@ -206,11 +191,9 @@ Additional materials that are required to build this drip irrigation system incl
 
   The -X option allows a program's GUI to be forwarded using ssh, it is required here to manually configure features on the RasPi.
 
-  7. At login instructions to reset the password are given - change it to something secure and at the least write it down somewhere you'll remember.
+  7. At login instructions to reset the password are given - change it to something secure and add the password to a password manager.
 
-  8. Since the AmaFi system is programmed in CircuitPython, some initial setup is required for the RasPi. update and install all the dependencies for CircuitPython, Seesaw, and other Python modules. For an in depth guide to configuring CircuitPython on your RasPi, you can view the Adafruit documentation. Otherwise, here's the code I ran to configure my setup:
-
-  ***Turn this into py file that i reference***
+  8. Since the AmaFi system is programmed in CircuitPython, some initial setup is required for the RasPi. Update and install all the dependencies for CircuitPython, Seesaw, and the other Python modules. For an in depth guide to configuring CircuitPython on your RasPi, you can view the Adafruit documentation. Otherwise, here's the code I ran to configure my setup:
 
   `sudo apt-get update`
 
@@ -219,8 +202,6 @@ Additional materials that are required to build this drip irrigation system incl
   `sudo apt-get install python3-pip`
 
   `sudo pip3 install --upgrade setuptools`
-
-  `cd ~`
 
   `sudo pip3 install --upgrade adafruit-python-shell`
 
@@ -234,11 +215,7 @@ Additional materials that are required to build this drip irrigation system incl
 
   `sudo pip3 install `
 
-
-
-
-
-To start with the AmaFi, you will need an
+ Note: Turn this into a script.
 
 # FAQs
 
@@ -249,10 +226,6 @@ What's the science behind deep watering?
 How do you encourage roots to grow deeply?
 
   By withholding water just long enough that crops enter the very initial stages of water stress, but not long enough to for irreversible damage to incur. This triggers the production of a hormone called Abscisic Acid (ABA). As ABA production increases it triggers roots to grow deeper into the soil to seek moisture. Increased root surface area in deeper parts of the soil ultimately makes plants more resilient to drought.
-
- How does watering deeply conserve water?
-
- Watering deeply reduces
 
  What are the limitations of watering deeply?
 
@@ -268,11 +241,11 @@ How do you encourage roots to grow deeply?
 
 `Seesaw hardware ID returned (0xd5) is not correct! Expected 0x55. Please check wiring.`
 
-  When this happens, CircuitPython is using the default Seesaw I2C address 0x55 instead of the address, 0x36, that has been specified in the program for soil moisture sensors. I'm not sure why this happens, but thankfully the error is mostly just an annoyance as it occurs infrequently and the watering program can simply be ran again.
+  When this happens, CircuitPython is using the default Seesaw I2C address 0x55 instead of the address, 0x36, that has been specified in the program for soil moisture sensors. I'm not sure why this happens, but thankfully the error is mostly just an annoyance as it occurs infrequently and the watering program can simply be ran again. I still need to add error handling to for this edge case.
 
 # License
 
-The AmaFi device is licensed under Open-source hardware, licensed b. Other y ???:
-* Hardware is licensed under ?
-* Software is licensed under ?
-* Documentation is licensed under ?
+The AmaFi device is licensed under Open-source hardware:
+* Hardware is licensed under MIT
+* Software is licensed under GNU
+* Documentation is licensed under GNU.
