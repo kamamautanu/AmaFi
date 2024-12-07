@@ -26,14 +26,6 @@ Deep watering is a technique where the soil is saturated with water down to at l
 
 Many, if not most, conventional watering methods only saturate the soil to as deep as 6". Watering shallowly in this way means that roots are only encouraged to grow in the top soil layer. Compared to deep layers of the soil that do not experience irradiation from the sun, the top layer is heated which increases the evaporation of water. When drought hits, the top soil layer quickly dries, creating a problem as this is where the plant roots are located. Deep watering allows for growing drought-resilient plants in systems that use water more efficiently.
 
-What's the science behind deep watering?
-
-  When plants receive water more frequently in lower volumes, the water does not penetrate deeply into the soil, but the top layer of soil will be more moist more often. When drought hits, these plants are not resilient and may suffer severe damage.
-
- What are the limitations of watering deeply?
-
- Heavy loam or clay soils can hold large volumes of water, but some soil types, namely sandy, drain too quickly and will require more frequent watering regardless. Adding organic matter to soil types like this can substantially increase the water holding capacity of the soil. Watering deeply is also not recommended when seeds or seedlings have yet to establish, as they won't be able to access water in the deeper soil layers.
-
 **3. Drip irrigation**
 
 With deep watering as the theory behind the AmaFi irrigation system, drip irrigation is the technique that brings the theory functionality. When it comes to conventional irrigation techniques, drip irrigation is perhaps most well-known for its water conservation potential when applied in the appropriate context.
