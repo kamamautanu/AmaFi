@@ -1,0 +1,49 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:Earth #PWR?
+U 1 1 6180D459
+P 4100 1500
+F 0 "#PWR?" H 4100 1250 50  0001 C CNN
+F 1 "Earth" H 4100 1350 50  0001 C CNN
+F 2 "" H 4100 1500 50  0001 C CNN
+F 3 "~" H 4100 1500 50  0001 C CNN
+	1    4100 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L STM32WL5x:STM32WL5x U?
+U 1 1 617F81B5
+P 4400 2100
+F 0 "U?" H 5394 2096 50  0000 L CNN
+F 1 "STM32WL5x" H 5394 2005 50  0000 L CNN
+F 2 "" H 4400 2100 50  0001 C CNN
+F 3 "" H 4400 2100 50  0001 C CNN
+	1    4400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 6181A514
+P 3450 2550
+F 0 "#PWR?" H 3450 2400 50  0001 C CNN
+F 1 "VDD" V 3465 2677 50  0000 L CNN
+F 2 "" H 3450 2550 50  0001 C CNN
+F 3 "" H 3450 2550 50  0001 C CNN
+	1    3450 2550
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
